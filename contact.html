@@ -1,39 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mountain Valley Resort</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>🏔️ Mountain Valley Resort</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
 
-<header>
-<h1>Contact Us</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+    <section class="page-header">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you</p>
+    </section>
 
-<section class="section">
-<p>📍 Kimunye, Kirinyaga</p>
-<p>📞 +254 XXX XXX</p>
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            
+            <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                    <h3>Address</h3>
+                    <p>Mountain Valley Resort<br>
+                    Kimunye, Kirinyaga County<br>
+                    Kenya</p>
+                </div>
+            </div>
 
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-</section>
+            <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                    <h3>Phone</h3>
+                    <p>Reservations: +254 700 000000<br>
+                    Reception: +254 711 111111<br>
+                    Emergency: +254 722 222222</p>
+                </div>
+            </div>
 
-<footer>
-<p>© 2026 Mountain Valley Resort</p>
-</footer>
+            <div class="info-item">
+                <span class="info-icon">📧</span>
+                <div>
+                    <h3>Email</h3>
+                    <p>info@mountainvalley.co.ke<br>
+                    reservations@mountainvalley.co.ke</p>
+                </div>
+            </div>
 
+            <div class="info-item">
+                <span class="info-icon">⏰</span>
+                <div>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 8:00 PM<br>
+                    Saturday - Sunday: 9:00 AM - 6:00 PM<br>
+                    24/7 Reception Available</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 700 000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="checkin">Check-in Date</label>
+                    <input type="date" id="checkin" name="checkin">
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5+">5+ Guests</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your inquiry..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </form>
+            <div id="formSuccess" class="success-message" style="display: none;">
+                Thank you! Your message has been sent successfully.
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753622471012!2d37.333333!3d-0.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMzAnMDAuMCJTIDM3wrAyMCcwMC4wIkU!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Mountain Valley Resort</h4>
+                <p>Your home away from home in Kimunye</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <p>📞 +254 700 000000</p>
+                <p>📧 info@mountainvalley.co.ke</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Mountain Valley Resort. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
